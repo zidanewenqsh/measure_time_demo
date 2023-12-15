@@ -10,11 +10,11 @@ enable_language(CUDA)
 set(CMAKE_CUDA_ARCHITECTURES 61) # 以您的 GPU 架构为准，例如 75 代表 Tesla T4
 
 # # 设置输出目录
-# set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${CMAKE_SOURCE_DIR}/bin)
-# # 调试标志
-# if(NOT CMAKE_BUILD_TYPE)
-#   set(CMAKE_BUILD_TYPE Debug)
-# endif()
+set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${CMAKE_SOURCE_DIR}/bin)
+# 调试标志
+if(NOT CMAKE_BUILD_TYPE)
+  set(CMAKE_BUILD_TYPE Debug)
+endif()
 
 
 # 设置编译器选项
